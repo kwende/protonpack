@@ -1,0 +1,43 @@
+name: Build task
+description: Track a fabrication, electronics, finish, or reliability task.
+title: "[Build] "
+labels: ["build"]
+body:
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - P0 - blocks October
+        - P1 - important quality/reliability
+        - P2 - polish/stretch
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Reference
+        - Frame and motherboard
+        - Shell
+        - Wand
+        - Electronics
+        - Finish
+        - Reliability
+        - Costume integration
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Done means
+      description: Describe the concrete output of this task.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes, links, and measurements
+      description: Include source plan page, measurement log row, or shop notes.
+

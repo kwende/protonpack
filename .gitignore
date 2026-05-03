@@ -1,0 +1,9 @@
+references/raw/
+references/downloaded/
+photos/raw/
+videos/raw/
+*.bak
+*.tmp
+Thumbs.db
+.DS_Store
+
